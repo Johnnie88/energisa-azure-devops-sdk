@@ -20,7 +20,7 @@ export class ExtendedWorkItemTrackingRestClient extends RestClientBase {
     project: string
   ): Promise<WorkItemTagDefinition> {
     return this.beginRequest<WorkItemTagDefinition>({
-      apiVersion: '7.1-preview.1',
+      apiVersion: '5.0',
       routeTemplate: '{project}/_apis/wit/tags/{tagIdOrName}',
       routeValues: {
         project: project,
@@ -36,7 +36,7 @@ export class ExtendedWorkItemTrackingRestClient extends RestClientBase {
    */
   public async getWorkItemTags(project: string): Promise<WorkItemTagDefinition[]> {
     return this.beginRequest<WorkItemTagDefinition[]>({
-      apiVersion: '7.1-preview.1',
+      apiVersion: '5.0',
       routeTemplate: '{project}/_apis/wit/tags',
       routeValues: {
         project: project

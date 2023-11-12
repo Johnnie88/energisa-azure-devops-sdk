@@ -265,7 +265,7 @@ export class WorkItemService implements IWorkItemService {
 
     if (project) {
       const client = getClient(ExtendedWorkItemTrackingRestClient);
-      const tags = await client.getWorkItemTags('demoproject');
+      const tags = await client.getWorkItemTags('Xpace-Dev');
       return tags;
     }
   }
