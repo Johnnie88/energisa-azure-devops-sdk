@@ -30,6 +30,11 @@ const getTemplate = (level: string) => {
   return format.replace('{0}', formattedDate).replace('{1}', level);
 };
 
+
+/**
+ * Provides a set of methods to log messages to the console.
+ //TODO: On Energisa Environment, the console.log needs to be replaced by a monitoring service.
+ */
 export const WebLogger = {
   trace: (...params: any[]): void => {
     // eslint-disable-next-line no-console

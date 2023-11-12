@@ -7,6 +7,8 @@ const parentField = 'System.LinkTypes.Hierarchy-Reverse';
 const childField = 'System.LinkTypes.Hierarchy-Forward';
 const workItemType = 'System.WorkItemType';
 const state = 'System.State';
+const columnField = 'System.BoardColumn';
+const areaPath = 'System.AreaPath';
 
 /**
  *
@@ -103,3 +105,20 @@ export const getWorkTypeFromReferenceName = (
   referenceName: string,
   workItemTypes: WorkItemType[]
 ): WorkItemType | undefined => workItemTypes.find(x => x.referenceName === referenceName);
+
+
+/**
+ * Get work item column
+ *
+ * @param workItem
+ * @returns
+ */
+export const getWorkItemColumn = (workItem: WorkItem): string => workItem.fields[columnField];
+
+/**
+ * Get work item area path
+ *
+ * @param workItem
+ * @returns
+ */
+export const getWorkItemAreaPath = (workItem: WorkItem): string => workItem.fields[areaPath];

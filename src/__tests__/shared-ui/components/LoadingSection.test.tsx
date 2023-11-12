@@ -3,6 +3,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
 
 import { LoadingSection } from '../../../shared-ui/component/LoadingSection';
+import React from 'react';
 
 describe('LoadingSection', () => {
   it('LoadingSection - rendering', () => {

@@ -19,6 +19,9 @@ export interface IDevOpsService {
   showDialog<T, DialogIds>(id: DialogIds, options: IDialogOptions<T>): Promise<void>;
 }
 
+/**
+ * DevOpsService class provides methods to interact with Azure DevOps services.
+ */
 export class DevOpsService implements IDevOpsService {
   public async getProject(): Promise<IProjectInfo | undefined> {
     const projectService = await DevOps.getService<IProjectPageService>(
@@ -27,6 +30,12 @@ export class DevOpsService implements IDevOpsService {
     const project = await projectService.getProject();
     return project;
   }
+
+  /**
+   * Displays a toast message with the given text.
+   * @param message The text to display in the toast message.
+   * TODO: Verify on Energisa Environment if the 2500 duration is enough.
+   */
   public async showToast(message: string): Promise<void> {
     const messageService = await DevOps.getService<IGlobalMessagesService>(
       'ms.vss-tfs-web.tfs-global-messages-service'
@@ -52,13 +61,22 @@ export class DevOpsService implements IDevOpsService {
 
     dialogService.openPanel<T>(`${DevOps.getExtensionContext().id}.${id}`, options);
   }
-
+  
+  /**
+   * Opens a new window with the specified URL using the DevOps host navigation service.
+   * @param url The URL to open in the new window.
+   */
   public async openLink(url: string): Promise<void> {
     const navigationService = await DevOps.getService<IHostNavigationService>(
       'ms.vss-features.host-navigation-service'
     );
     navigationService.openNewWindow(url, '');
   }
+
+  /**
+   * Retrieves the ID of the current work item.
+   * @returns The ID of the current work item, or undefined if there is no current work item.
+   */
   public async getCurrentWorkItemId(): Promise<number | undefined> {
     try {
       const formService = await DevOps.getService<IWorkItemFormService>(
@@ -70,6 +88,7 @@ export class DevOpsService implements IDevOpsService {
       return undefined;
     }
   }
+
   public async getQueryParameters(): Promise<
     | {
         [key: string]: string;
