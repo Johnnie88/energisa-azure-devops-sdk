@@ -195,6 +195,13 @@ export class WorkItemService implements IWorkItemService {
     return [];
   }
 
+  /**
+   * Retrieves a work item by ID.
+   * @param id The ID of the work item to retrieve.
+   * @param expand The level of detail to return in the work item.
+   * @param fields The list of fields to retrieve for the work item.
+   * @returns A Promise that resolves to the retrieved work item.
+   */
   public async getWorkItem(
     id: number,
     expand?: WorkItemExpand,
@@ -205,6 +212,14 @@ export class WorkItemService implements IWorkItemService {
     return wit;
   }
 
+  /**
+   * Retrieves work items by their IDs.
+   * @param ids - The IDs of the work items to retrieve.
+   * @param expand - The level of detail to return for each work item.
+   * @param fields - The fields to include in the results.
+   * @param errorPolicy - The error policy to apply when retrieving the work items.
+   * @returns A promise that resolves to an array of work items.
+   */
   public async getWorkItems(
     ids: number[],
     expand?: WorkItemExpand,
@@ -216,6 +231,12 @@ export class WorkItemService implements IWorkItemService {
     return wit;
   }
 
+  /**
+   * Sets the state of a work item with the specified ID.
+   * @param id The ID of the work item to update.
+   * @param state The new state to set for the work item.
+   * @returns A Promise that resolves to the updated WorkItem object.
+   */
   public async setWorkItemState(id: number, state: string): Promise<WorkItem> {
     const client = getClient(WorkItemTrackingRestClient);
     const updated = await client.updateWorkItem(
@@ -231,12 +252,25 @@ export class WorkItemService implements IWorkItemService {
     return updated;
   }
 
+  /**
+   * Retrieves the value of a specific column for a given work item.
+   * @param id The ID of the work item to retrieve.
+   * @param column The name of the column to retrieve the value from.
+   * @returns A Promise that resolves to the value of the specified column for the given work item.
+   */
   public async getWorkItemColumnValue(id: number, column: string): Promise<string> {
     const client = getClient(WorkItemTrackingRestClient);
     const wit = await client.getWorkItem(id);
     return wit.fields[column];
   }
 
+  /**
+   * Sets the value of a specified column for a work item.
+   * @param id - The ID of the work item.
+   * @param column - The name of the column to set the value for.
+   * @param value - The value to set for the specified column.
+   * @returns A Promise that resolves to the updated WorkItem object.
+   */
   public async setWorkItemColumnValue(
     id: number,
     column: string,
@@ -265,7 +299,7 @@ export class WorkItemService implements IWorkItemService {
 
     if (project) {
       const client = getClient(ExtendedWorkItemTrackingRestClient);
-      const tags = await client.getWorkItemTags('Xpace-Dev');
+      const tags = await client.getWorkItemTags('Xpace-Services');
       return tags;
     }
   }

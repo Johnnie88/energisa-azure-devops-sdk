@@ -1,4 +1,3 @@
-import { RestClientFactory, IVssRestClientOptions } from 'azure-devops-extension-api';
 import { CoreRestClient } from '../Core';
 import { WorkItemTrackingRestClient } from '../WorkItemTracking';
 import { WorkItemTrackingProcessRestClient } from '../WorkItemTrackingProcess';

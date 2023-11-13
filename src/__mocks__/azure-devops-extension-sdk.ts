@@ -113,10 +113,10 @@ export const mockReady = jest.fn();
 export const mockGetConfiguration = jest.fn();
 export const mockNotifyLoadSucceeded = jest.fn();
 export const mockGetExtensionContext = jest.fn().mockReturnValue({
-  id: 'as-pub.auto-state',
+  id: 'as-pub',
   publisherId: 'as-pub',
-  extensionId: 'auto-state',
-  version: '0.1.1'
+  extensionId: 'as-ext',
+  version: '1.1.1'
 });
 
 export function resize(width?: number, height?: number) {

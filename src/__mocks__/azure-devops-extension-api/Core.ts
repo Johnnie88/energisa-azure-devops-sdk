@@ -5,7 +5,6 @@ export const mockGetProjectProperties = jest.fn().mockRejectedValue(new Error('N
 
 export class CoreRestClient {
   public TYPE = 'CoreRestClient';
-  constructor(options: IVssRestClientOptions) {}
 
   getProjectProperties(projectId: string, keys?: string[]): Promise<ProjectProperty[]> {
     return new Promise(resolve => resolve(mockGetProjectProperties(projectId, keys)));

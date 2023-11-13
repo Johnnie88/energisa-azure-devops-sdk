@@ -9,7 +9,7 @@ export interface ExtendedZeroDataProps {
   icon?: IIconProps;
 }
 export const ExtendedZeroData = ({
-  buttons,
+  buttons = [],
   icon,
   title,
   description

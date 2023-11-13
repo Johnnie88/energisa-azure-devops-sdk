@@ -1,3 +1,6 @@
+/**
+ * Displays a work item state with a colored dot and text.
+ */
 export interface WorkItemStateDisplayProps {
   color: string;
   text: string;

@@ -53,7 +53,7 @@ describe('DevOpsService', () => {
       expect.assertions(2);
 
       mockOpenPanel.mockImplementation((id: string, options: IPanelOptions<any>) => {
-        expect(id).toEqual('as-pub.auto-state.settings-panel');
+        expect(id).toEqual('as-pub.as-pub.settings-panel');
         expect(options.size).toEqual(2);
       });
 

@@ -32,9 +32,10 @@ export const IdentityPicker = ({
       if ((intId === undefined || intId.entityId !== identity.entityId) && !loading) {
         setLoading(true);
 
-        const identityResult = (await identityProvider.getEntityFromUniqueAttribute(
+        const identityResult = (
+          await identityProvider.getEntityFromUniqueAttribute(
           identity.entityId
-        )) as IIdentity;
+        ));
         setIntId(identityResult);
         setLoading(false);
       }
@@ -53,10 +54,10 @@ export const IdentityPicker = ({
         if (identity) {
           setIntId(identity);
           const id: IInternalIdentity = {
-            id: identity.localId || identity.entityId,
+            id: identity.localId ?? identity.entityId,
             descriptor: identity.subjectDescriptor,
             entityId: identity.entityId,
-            displayName: identity.displayName || 'Unknown User',
+            displayName: identity.displayName ?? 'Unknown User',
             image: identity.image,
             entityType: identity.entityType as IInternalIdentityType
           };

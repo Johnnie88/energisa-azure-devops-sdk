@@ -69,6 +69,22 @@ export const getWorkItemTypeDisplayName = (workItem: WorkItem): string =>
 export const getWorkItemState = (workItem: WorkItem): string => workItem.fields[state];
 
 /**
+ * Get work item column
+ *
+ * @param workItem
+ * @returns
+ */
+export const getWorkItemColumn = (workItem: WorkItem): string => workItem.fields[columnField];
+
+/**
+ * Get work item area path
+ *
+ * @param workItem
+ * @returns
+ */
+export const getWorkItemAreaPath = (workItem: WorkItem): string => workItem.fields[areaPath];
+
+/**
  * Get work item type reference name. E.g "User Story" => "Microsoft.VSTS.WorkItemTypes.UserStory"
  * @param workItem
  * @returns work item type reference name. E.g "Microsoft.VSTS.WorkItemTypes.UserStory"
@@ -105,20 +121,3 @@ export const getWorkTypeFromReferenceName = (
   referenceName: string,
   workItemTypes: WorkItemType[]
 ): WorkItemType | undefined => workItemTypes.find(x => x.referenceName === referenceName);
-
-
-/**
- * Get work item column
- *
- * @param workItem
- * @returns
- */
-export const getWorkItemColumn = (workItem: WorkItem): string => workItem.fields[columnField];
-
-/**
- * Get work item area path
- *
- * @param workItem
- * @returns
- */
-export const getWorkItemAreaPath = (workItem: WorkItem): string => workItem.fields[areaPath];

@@ -11,10 +11,10 @@ export interface IStorageService {
 
 export class StorageService implements IStorageService {
   private dataService?: IExtensionDataService;
-  private _devOpsServive: DevOpsService;
+  private _devOpsService: DevOpsService;
 
   constructor() {
-    this._devOpsServive = new DevOpsService();
+    this._devOpsService = new DevOpsService();
   }
 
   protected async getDataService(): Promise<IExtensionDataService> {
