@@ -299,7 +299,7 @@ export class WorkItemService implements IWorkItemService {
 
     if (project) {
       const client = getClient(ExtendedWorkItemTrackingRestClient);
-      const tags = await client.getWorkItemTags('Xpace-Services');
+      const tags = await client.getWorkItemTags('Energisa');
       return tags;
     }
   }
