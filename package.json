@@ -1,6 +1,6 @@
 {
   "name": "energisa-azure-devops-sdk",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "SDK for Energisa Azure Devops Server",
   "scripts": {
     "build": "rimraf dist/ && tsc -d && npm run copy:styles && node ./build-package.js",
