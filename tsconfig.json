@@ -1,28 +1,22 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "declaration": true,
-    "strict": true,
-    "module": "ES6",
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "lib": [
-      "es6",
-      "dom"
-    ],
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "preserveConstEnums": true,
-    "isolatedModules": true,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "outDir": "dist"
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "src/__mocks__",
-    "src/__tests__"
-  ]
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es5",
+        "declaration": true,
+        "rootDir": "src/",
+        "outDir": "bin/",
+        "experimentalDecorators": true,
+        "module": "amd",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "preserveConstEnums": true,
+        "strict": true,
+        "lib": [
+            "es5",
+            "es6",
+            "dom",
+            "es2015.promise"
+        ]
+    }
 }

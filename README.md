@@ -1,2 +1,2 @@
-# energisa-azure-devops-sdk
-SDK for Energisa Azure Devops Server
+# Azure DevOps Web API clients and contracts
+

@@ -1,39 +1,35 @@
 {
-  "name": "energisa-azure-devops-sdk",
-  "version": "1.2.1",
-  "description": "SDK for Energisa Azure Devops Server",
-  "scripts": {
-    "build": "rimraf dist/ && tsc -d && npm run copy:styles && node ./build-package.js",
-    "copy:styles": "ncp ./src/styles ./dist/styles",
-    "lint": "eslint src --ignore-path .eslintignore --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "eslint --fix src --ignore-path .eslintignore --ext ts --ext tsx --ext js --ext jsx",
-    "autoformat": "./node_modules/.bin/prettier --write 'src/**/**.scss' 'src/**/*.tsx'",
-    "test:coverage": "env TEST_REPORT_FILENAME=test-results.xml jest --verbose --coverage",
-    "test": "env TEST_REPORT_FILENAME=test-results.xml jest --verbose",
-    "test:ci": "env TEST_REPORT_FILENAME=test-results.xml jest --verbose --coverage --ci",
-    "prepublish": "npm run build",
-    "publish": "npm run build && npm publish --access public",
-    "package": "npm run build && npm pack",
-    "version": "npm run build && git add -A dist/ && git commit -m \"chore: update dist for version $npm_package_version\" && git push"
-  },
+  "name": "@energisa-sdk/azure-devops-extension-sdk",
+  "version": "4.227.0.preview.rc07",
+  "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnnie88/energisa-azure-devops-sdk.git"
+    "url": "https://devops.energisa.com.br/Energisa/EngenhariaSoftware/_git/Energisa-Boards-ExtensionSDK"
   },
-  "author": "Joao Ricardo Rodrigues De La Cruz Baptista <joao.baptista@alienbuildtech.com> (https://alienbuildtech.com/)",
+  "scripts": {
+    "build": "node buildpackage.js"
+  },
+  "keywords": [
+    "extensions",
+    "Azure DevOps",
+    "Visual Studio Team Services"
+  ],
+  "author": "Joao Ricardo Rodrigues De La Cruz Baptista <joao.baptista@tivit.com> (https://tivit.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johnnie88/energisa-azure-devops-sdk/issues"
+    "url": "https://energisa.com.br/AAk5pcm"
   },
-  "homepage": "https://github.com/johnnie88/energisa-azure-devops-sdk#readme",
+  "homepage": "https://energisa.com.br",
+  "dependencies": {
+    "@types/node": "^20.9.0",
+    "azure-devops-extension-api": "^4.227.0",
+    "azure-devops-extension-sdk": "^4.0.2",
+    "azure-devops-ui": "^2.167.84",
+    "whatwg-fetch": "~3.0.0",
+    "yup": "^1.3.2"
+  },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/react-hooks": "^7.0.2",
-    "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.8",
-    "@types/react": "^16.14.14",
-    "@types/react-dom": "^16.9.14",
+    "@types/react": "^18.2.37",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "classnames": "^2.3.1",
@@ -42,24 +38,16 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "eslint-plugin-testing-library": "^5.0.3",
+    "glob": "~7.1.2",
     "jest": "^27.4.0",
     "jest-junit-reporter": "^1.1.0",
     "ncp": "^2.0.0",
+    "node": "^11.0.0",
+    "recursive-copy": "~2.0.7",
     "rimraf": "^3.0.2",
+    "shelljs": "~0.8.5",
     "ts-jest": "^27.0.7",
-    "typescript": "^4.5.4"
-  },
-  "peerDependencies": {
-    "@fluentui/react": "^8.49.6",
-    "azure-devops-extension-api": "^1.158.0",
-    "azure-devops-extension-sdk": "^2.0.11",
-    "azure-devops-ui": "^2.167.28",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "yup": "^0.32.11"
-  },
-  "dependencies": {
-    "energisa-azure-devops-sdk": "^1.2.1",
-    "semver": "^7.5.4"
+    "typescript": "^2.9.2",
+    "uglify-es": "~3.1.3"
   }
 }
