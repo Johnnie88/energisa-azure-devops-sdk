@@ -177,37 +177,4 @@ export class WorkItemService implements IWorkItemService {
       return wit;
     }
   }
-
-  public async setWorkItemBoardColumn(workItem: WorkItem, column: string): Promise<WorkItem> {
-    const client = getClient(WorkItemTrackingRestClient);
-    const updated = await client.updateWorkItem(
-      [
-        {
-          op: 'add',
-          path: '/fields/System.BoardColumn',
-          value: column
-        }
-      ],
-      workItem.id
-    );
-    return updated;
-  }
-
-  public async setWorkItemBoardColumnDone(
-    workItem: WorkItem,
-    done: boolean
-  ): Promise<WorkItem> {
-    const client = getClient(WorkItemTrackingRestClient);
-    const updated = await client.updateWorkItem(
-      [
-        {
-          op: 'add',
-          path: '/fields/System.BoardColumnDone',
-          value: done
-        }
-      ],
-      workItem.id
-    );
-    return updated;
-  }
 }
