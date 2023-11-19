@@ -12,22 +12,20 @@ export const getHostUrl = async (
         return storedUrl;
       }
     }
-  
+
     const navService: ILocationService = await DevOps.getService<ILocationService>(
       'ms.vss-features.location-service'
     );
-  
+
     if (navService === undefined) return undefined;
     const hostBaseUrl = await navService.getResourceAreaLocation(CoreRestClient.RESOURCE_AREA_ID);
-  
+
     if (hostBaseUrl === undefined) return undefined;
     const returnUrl = includeOrg ? hostBaseUrl : new URL(hostBaseUrl).origin;
-  
+
     if (localStorageKey !== undefined) {
       localStorage.setItem(localStorageKey, returnUrl);
     }
-  
+
     return returnUrl;
   };
-
-  

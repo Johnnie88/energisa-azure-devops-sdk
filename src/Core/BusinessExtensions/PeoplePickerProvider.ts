@@ -7,8 +7,8 @@ import {
 import { getService } from 'azure-devops-extension-sdk';
 import { IIdentity } from 'azure-devops-ui/IdentityPicker';
 
-import { mapAbsoluteImageUrl } from './HotsUtilss
-import { getHostUrl } from './HostUtils';
+import { mapAbsoluteImageUrl } from '../../Utils/IdentityUtils';
+import { getHostUrl } from './HotsUtils';
 
 export class ExtensionPeoplePickerProvider implements IPeoplePickerProvider {
   private identityService: Promise<IVssIdentityService>;

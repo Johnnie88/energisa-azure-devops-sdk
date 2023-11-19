@@ -10,7 +10,7 @@
  * const random = arr.random();
  * console.log(random); // 4
  * console.log(arr); // [1, 2, 3, 5]
- * 
+ *
     * @memberOf Array
     * @example
     * const arr = [1, 2, 3, 4, 5];
