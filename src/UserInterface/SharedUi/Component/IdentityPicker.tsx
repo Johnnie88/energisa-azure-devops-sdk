@@ -7,6 +7,7 @@ import {
   
   import { IInternalIdentity, IInternalIdentityType } from '../../../Common/CommonTypes';
   import { ExtensionPeoplePickerProvider } from '../../../Core/BusinessExtensions/PeoplePickerProvider';
+import React = require('react');
   export interface IdentityPickerProps
     extends Omit<IIdentityPickerDropdownProps, 'pickerProvider' | 'value' | 'onChange'> {
     identity?: IInternalIdentity;
@@ -48,7 +49,7 @@ import {
       <IdentityPickerDropdown
         pickerProvider={identityProvider}
         value={intId}
-        onChange={identity => {
+        onChange={(identity: IIdentity) => {
           if (identity) {
             setIntId(identity);
             const id: IInternalIdentity = {
