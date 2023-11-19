@@ -3,10 +3,12 @@ import {
   IdentitiesSearchRequestModel,
   IPeoplePickerProvider,
   IVssIdentityService
-} from '../../../Identities';
+} from '../../Identities';
 import { getService } from 'azure-devops-extension-sdk';
-import { IIdentity } from 'azure-devops-ui/IdentityPicker';import { mapAbsoluteImageUrl } from '../utils/IdentityUtils';
-import { getHostUrl } from './HostUtils';
+import { IIdentity } from 'azure-devops-ui/IdentityPicker';
+
+import { mapAbsoluteImageUrl } from '../../Utils/IdentityUtils';
+import { getHostUrl } from './HotsUtils';
 
 export class ExtensionPeoplePickerProvider implements IPeoplePickerProvider {
   private identityService: Promise<IVssIdentityService>;

@@ -1,4 +1,6 @@
-import { ValidationError as YupValidationError } from 'yup';import { capitalizeFirstLetter } from './StringUtils';
+import { ValidationError as YupValidationError } from 'yup';
+
+import { capitalizeFirstLetter } from './StringUtils';
 export type ValidationErrors = { [key: string]: string[] };
 
 export const parseValidationError = (error: YupValidationError): ValidationErrors => {
@@ -69,5 +71,3 @@ export const getValidationCount = (
   if (count > 0) return count;
   return undefined;
 };
-
-// TODO: Validate new rule to move when all the children are moved or all the parents are moved

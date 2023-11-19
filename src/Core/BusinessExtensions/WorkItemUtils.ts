@@ -1,12 +1,12 @@
-import { WorkItem, WorkItemType } from '../../../WorkItemTracking';import { isDefined } from './CoreUtils';
+import { WorkItem, WorkItemType } from 'azure-devops-extension-api/WorkItemTracking';
+
+import { isDefined } from './Generics';
 
 const titleField = 'System.Title';
 const parentField = 'System.LinkTypes.Hierarchy-Reverse';
 const childField = 'System.LinkTypes.Hierarchy-Forward';
 const workItemType = 'System.WorkItemType';
 const state = 'System.State';
-const columnField = 'System.BoardColumn';
-const areaPath = 'System.AreaPath';
 
 /**
  *
@@ -65,22 +65,6 @@ export const getWorkItemTypeDisplayName = (workItem: WorkItem): string =>
  * @returns Work item state
  */
 export const getWorkItemState = (workItem: WorkItem): string => workItem.fields[state];
-
-/**
- * Get work item column
- *
- * @param workItem
- * @returns
- */
-export const getWorkItemColumn = (workItem: WorkItem): string => workItem.fields[columnField];
-
-/**
- * Get work item area path
- *
- * @param workItem
- * @returns
- */
-export const getWorkItemAreaPath = (workItem: WorkItem): string => workItem.fields[areaPath];
 
 /**
  * Get work item type reference name. E.g "User Story" => "Microsoft.VSTS.WorkItemTypes.UserStory"

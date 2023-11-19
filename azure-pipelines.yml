@@ -1,0 +1,23 @@
+trigger:
+  - master
+  - release*
+  - fix*
+
+resources:
+  repositories:
+  - repository: TemplatePipeline
+    type: git
+    name: DevOps/TemplatePipeline
+
+stages:
+  - template: npm/build-template-stages-sq.yml@TemplatePipeline
+    parameters:
+      #BuildContainer: "docker-prd.registry.energisa.corp/devops-pipelines/node-20:latest"
+      SourceFolder: ''
+      npmCommand: 'run build'
+
+  - template: npm/publish-artifactory-template-stages-sq.yml@TemplatePipeline
+    parameters:
+      #BuildContainer: "docker-prd.registry.energisa.corp/devops-pipelines/node-20:latest"
+      workingFolderPack: '$(Build.SourcesDirectory)/bin'
+      npmCommand: 'run build'

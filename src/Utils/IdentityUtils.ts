@@ -1,6 +1,8 @@
-import { IVssIdentityService } from '../../../Identities';
+import { IVssIdentityService } from 'azure-devops-extension-api/Identities';
 import * as DevOps from 'azure-devops-extension-sdk';
-import { IIdentity } from 'azure-devops-ui/IdentityPicker';import { IInternalIdentity, IInternalIdentityType } from '../CommonTypes';
+import { IIdentity } from 'azure-devops-ui/IdentityPicker';
+
+import { IInternalIdentity, IInternalIdentityType } from '../Common/CommonTypes';
 
 export const isSameIdentity = (first: IInternalIdentity, second: IInternalIdentity): boolean => {
   if (first.id === second.id) return true;

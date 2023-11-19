@@ -1,5 +1,7 @@
 import { IExtensionDataService } from 'azure-devops-extension-api';
-import * as DevOps from 'azure-devops-extension-sdk';import { ScopeType } from '../CommonTypes';
+import * as DevOps from 'azure-devops-extension-sdk';
+
+import { ScopeType } from '../../Common/CommonTypes';
 import { DevOpsService } from './DevOpsService';
 
 export interface IStorageService {
@@ -9,11 +11,10 @@ export interface IStorageService {
 
 export class StorageService implements IStorageService {
   private dataService?: IExtensionDataService;
-  private _devOpsService: DevOpsService;
+  private _devOpsServive: DevOpsService;
 
   constructor() {
-    this._devOpsService = new DevOpsService();
-  }
+    this._devOpsServive = new DevOpsService();  }
 
   protected async getDataService(): Promise<IExtensionDataService> {
     if (this.dataService === undefined) {
