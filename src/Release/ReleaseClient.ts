@@ -1,6 +1,14 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
 import { RestClientBase } from "../Common/RestClientBase";
-import { deserializeVssJsonObject } from "../Common/Util/Serialization";import * as FormInput from "../FormInput/FormInput";
+import { deserializeVssJsonObject } from "../Common/Util/Serialization";
+
+import * as FormInput from "../FormInput/FormInput";
 import * as Release from "../Release/Release";
 import * as WebApi from "../WebApi/WebApi";
 

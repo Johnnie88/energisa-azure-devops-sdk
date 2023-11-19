@@ -1,4 +1,10 @@
-﻿import * as Identities from "../Identities/Identities";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as Identities from "../Identities/Identities";
 
 export interface AadGraphMember extends GraphMember {
     /**

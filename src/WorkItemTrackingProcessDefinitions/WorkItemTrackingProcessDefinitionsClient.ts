@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as WorkItemTrackingProcessDefinitions from "../WorkItemTrackingProcessDefinitions/WorkItemTrackingProcessDefinitions";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as WorkItemTrackingProcessDefinitions from "../WorkItemTrackingProcessDefinitions/WorkItemTrackingProcessDefinitions";
 
 export class WorkItemTrackingProcessDefinitionsRestClient extends RestClientBase {
     constructor(options: IVssRestClientOptions) {

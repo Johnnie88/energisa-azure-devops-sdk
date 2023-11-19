@@ -1,4 +1,10 @@
-﻿import * as Graph from "../Graph/Graph";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as Graph from "../Graph/Graph";
 
 /**
  * Information about the location of a REST API resource

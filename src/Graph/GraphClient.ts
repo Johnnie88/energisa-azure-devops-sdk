@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as Graph from "../Graph/Graph";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as Graph from "../Graph/Graph";
 import * as Profile from "../Profile/Profile";
 import * as WebApi from "../WebApi/WebApi";
 

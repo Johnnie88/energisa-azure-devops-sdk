@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as FeatureManagement from "../FeatureManagement/FeatureManagement";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as FeatureManagement from "../FeatureManagement/FeatureManagement";
 
 export class FeatureManagementRestClient extends RestClientBase {
     constructor(options: IVssRestClientOptions) {

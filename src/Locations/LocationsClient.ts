@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as Locations from "../Locations/Locations";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as Locations from "../Locations/Locations";
 import * as WebApi from "../WebApi/WebApi";
 
 export class LocationsRestClient extends RestClientBase {

@@ -1,4 +1,10 @@
-﻿import * as Gallery from "../Gallery/Gallery";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as Gallery from "../Gallery/Gallery";
 import * as WebApi from "../WebApi/WebApi";
 
 /**

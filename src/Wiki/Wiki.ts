@@ -1,4 +1,10 @@
-﻿import * as Git from "../Git/Git";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as Git from "../Git/Git";
 
 /**
  * Defines a wiki repository which encapsulates the git repository backing the wiki.

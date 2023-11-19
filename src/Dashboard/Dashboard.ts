@@ -1,4 +1,8 @@
-﻿
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
 
 /**
  * Copy options of a Dashboard.

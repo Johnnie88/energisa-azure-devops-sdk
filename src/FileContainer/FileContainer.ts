@@ -1,4 +1,8 @@
-﻿
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
 
 /**
  * Compression type for file stored in Blobstore

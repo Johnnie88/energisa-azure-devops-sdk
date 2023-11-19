@@ -1,4 +1,8 @@
-﻿
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
 
 /**
  * Identifies an attribute with a name and a container.

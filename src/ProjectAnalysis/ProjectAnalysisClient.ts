@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as ProjectAnalysis from "../ProjectAnalysis/ProjectAnalysis";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as ProjectAnalysis from "../ProjectAnalysis/ProjectAnalysis";
 
 export class ProjectAnalysisRestClient extends RestClientBase {
     constructor(options: IVssRestClientOptions) {

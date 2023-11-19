@@ -1,4 +1,10 @@
-﻿import * as WebApi from "../WebApi/WebApi";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as WebApi from "../WebApi/WebApi";
 
 /**
  * How the acquisition is assigned
