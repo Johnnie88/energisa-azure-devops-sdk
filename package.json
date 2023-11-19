@@ -22,8 +22,11 @@
   },
   "homepage": "https://energisa.com.br",
   "dependencies": {
-    "azure-devops-ui": "^2.167.84",
+    "@fluentui/react": "^8.112.9",
+    "@types/node": "^20.9.2",
     "@types/react": "^16.8.8",
+    "@types/react-dom": "^18.2.15",
+    "azure-devops-ui": "^2.167.84",
     "tsc": "^2.0.4",
     "whatwg-fetch": "~3.0.0",
     "yup": "^1.3.2"
