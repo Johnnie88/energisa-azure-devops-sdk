@@ -1,6 +1,6 @@
 import { IVssRestClientOptions } from '../../Common/Context';
 import { RestClientBase } from '../../Common/RestClientBase';
-import { WorkItemTagDefinition } from '../../WorkItemTracking
+import { WorkItemTagDefinition } from '../../WorkItemTracking';
 
 export class ExtendedWorkItemTrackingRestClient extends RestClientBase {
   constructor(options: IVssRestClientOptions) {
