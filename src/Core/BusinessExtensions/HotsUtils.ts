@@ -1,4 +1,4 @@
-import { ILocationService } from 'azure-devops-extension-api';
+import { ILocationService } from '../../Common/CommonServices'
 import { CoreRestClient } from '../CoreClient';
 import * as DevOps from 'azure-devops-extension-sdk';
 

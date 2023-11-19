@@ -1,4 +1,4 @@
-import { WorkItem, WorkItemType } from 'azure-devops-extension-api/WorkItemTracking';
+import { WorkItem, WorkItemType } from '../../WorkItemTracking';
 
 import { isDefined } from './Generics';
 
