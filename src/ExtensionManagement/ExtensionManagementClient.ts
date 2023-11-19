@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as ExtensionManagement from "../ExtensionManagement/ExtensionManagement";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as ExtensionManagement from "../ExtensionManagement/ExtensionManagement";
 import * as Gallery from "../Gallery/Gallery";
 
 export class ExtensionManagementRestClient extends RestClientBase {

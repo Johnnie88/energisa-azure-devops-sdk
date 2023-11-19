@@ -1,4 +1,10 @@
-﻿import * as TfsCore from "../Core/Core";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as TfsCore from "../Core/Core";
 import * as Policy from "../Policy/Policy";
 import * as WebApi from "../WebApi/WebApi";
 

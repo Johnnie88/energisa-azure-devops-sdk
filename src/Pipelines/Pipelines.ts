@@ -1,4 +1,10 @@
-﻿import * as WebApi from "../WebApi/WebApi";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as WebApi from "../WebApi/WebApi";
 
 /**
  * Artifacts are collections of files produced by a pipeline. Use artifacts to share files between stages in a pipeline or between different pipelines.

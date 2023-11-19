@@ -1,4 +1,10 @@
-﻿import * as TfsCore from "../Core/Core";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import * as TfsCore from "../Core/Core";
 import * as DistributedTaskCommon from "../DistributedTaskCommon/DistributedTaskCommon";
 import * as Git from "../Git/Git";
 import * as Test from "../Test/Test";

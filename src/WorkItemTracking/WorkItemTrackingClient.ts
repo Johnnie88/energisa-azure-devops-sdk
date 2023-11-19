@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as WebApi from "../WebApi/WebApi";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as WebApi from "../WebApi/WebApi";
 import * as WorkItemTracking from "../WorkItemTracking/WorkItemTracking";
 
 export class WorkItemTrackingRestClient extends RestClientBase {

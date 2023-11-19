@@ -1,6 +1,14 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
 import { RestClientBase } from "../Common/RestClientBase";
-import { deserializeVssJsonObject } from "../Common/Util/Serialization";import * as Test from "../Test/Test";
+import { deserializeVssJsonObject } from "../Common/Util/Serialization";
+
+import * as Test from "../Test/Test";
 import * as WebApi from "../WebApi/WebApi";
 
 export class TestResultsRestClient extends RestClientBase {

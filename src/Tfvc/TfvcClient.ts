@@ -1,6 +1,14 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
 import { RestClientBase } from "../Common/RestClientBase";
-import { deserializeVssJsonObject } from "../Common/Util/Serialization";import * as Tfvc from "../Tfvc/Tfvc";
+import { deserializeVssJsonObject } from "../Common/Util/Serialization";
+
+import * as Tfvc from "../Tfvc/Tfvc";
 import * as WebApi from "../WebApi/WebApi";
 
 export class TfvcRestClient extends RestClientBase {

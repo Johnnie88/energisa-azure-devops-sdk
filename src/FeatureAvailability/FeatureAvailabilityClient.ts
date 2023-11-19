@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as FeatureAvailability from "../FeatureAvailability/FeatureAvailability";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as FeatureAvailability from "../FeatureAvailability/FeatureAvailability";
 
 export class FeatureAvailabilityRestClient extends RestClientBase {
     constructor(options: IVssRestClientOptions) {

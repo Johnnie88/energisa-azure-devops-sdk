@@ -1,4 +1,8 @@
-﻿
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
 
 /**
  * Class that describes a request to add a field in a work item type.

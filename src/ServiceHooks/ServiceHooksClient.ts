@@ -1,5 +1,13 @@
-﻿import { IVssRestClientOptions } from "../Common/Context";
-import { RestClientBase } from "../Common/RestClientBase";import * as FormInput from "../FormInput/FormInput";
+﻿/*
+ * ---------------------------------------------------------
+ * Copyright(C) Microsoft Corporation. All rights reserved.
+ * ---------------------------------------------------------
+ */
+
+import { IVssRestClientOptions } from "../Common/Context";
+import { RestClientBase } from "../Common/RestClientBase";
+
+import * as FormInput from "../FormInput/FormInput";
 import * as Notification from "../Notification/Notification";
 import * as ServiceHooks from "../ServiceHooks/ServiceHooks";
 
