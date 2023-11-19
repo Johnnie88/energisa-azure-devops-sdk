@@ -19,7 +19,7 @@ const UglifyES = require("uglify-es");
     // Compile typescript
     console.log("# Compiling TypeScript. Executing `node_modules\\.bin\\tsc -p ./tsconfig.json`.");
     try {
-        execSync("node_modules/.bin/tsc -p ./tsconfig.json", {
+        execSync("cd node_modules\\.bin\\tsc -p ./tsconfig.json", {
             stdio: [0, 1, 2],
             shell: true,
             cwd: __dirname,
