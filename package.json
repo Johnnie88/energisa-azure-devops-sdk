@@ -23,7 +23,7 @@
   "homepage": "https://energisa.com.br",
   "dependencies": {
     "azure-devops-ui": "^2.167.84",
-    "npx": "^3.0.0",
+    "@types/react": "^16.8.8",
     "tsc": "^2.0.4",
     "whatwg-fetch": "~3.0.0",
     "yup": "^1.3.2"
