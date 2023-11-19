@@ -7,7 +7,6 @@ import {
   IProjectInfo,
   IProjectPageService
 } from '../../Common';
-// import { IWorkItemFormService } from 'azure-devops-extension-api/WorkItemTracking';
 import { IWorkItemFormService } from '../../WorkItemTracking';
 import * as DevOps from 'azure-devops-extension-sdk';
 

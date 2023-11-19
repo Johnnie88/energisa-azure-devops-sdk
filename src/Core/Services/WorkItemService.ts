@@ -1,4 +1,3 @@
-// import { getClient } from 'azure-devops-extension-api/Common';
 import { getClient } from '../../Common';
 import { CoreRestClient, ProjectProperty } from '../../Core';
 import {
@@ -45,7 +44,7 @@ export class WorkItemService implements IWorkItemService {
   private _devOpsService: IDevOpsService;
   private _processTemplateTypeKey = 'System.ProcessTemplateType';
   constructor(devOpsService?: IDevOpsService) {
-    this._devOpsService = devOpsService ?? new DevOpsService();
+    this._devOpsService = devOpsService || new DevOpsService();
   }
 
   public async getParentForWorkItem(
