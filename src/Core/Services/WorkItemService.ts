@@ -96,6 +96,8 @@ export class WorkItemService implements IWorkItemService {
           return process.name;
         }
       }
+
+      return undefined;
     }
   }
 
