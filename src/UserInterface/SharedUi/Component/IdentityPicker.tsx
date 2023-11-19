@@ -5,9 +5,8 @@ import {
   } from 'azure-devops-ui/IdentityPicker';
   import { useEffect, useMemo, useState } from 'react';
   
-  import { IInternalIdentity, IInternalIdentityType } from '../../CommonTypes';
-  import { ExtensionPeoplePickerProvider } from '../../core/ExtensionPeoplePickerProvider';
-  
+  import { IInternalIdentity, IInternalIdentityType } from '../../../Common/CommonTypes';
+  import { ExtensionPeoplePickerProvider } from '../../../Core/BusinessExtensions/PeoplePickerProvider';
   export interface IdentityPickerProps
     extends Omit<IIdentityPickerDropdownProps, 'pickerProvider' | 'value' | 'onChange'> {
     identity?: IInternalIdentity;

@@ -1,6 +1,6 @@
-import { IVssRestClientOptions } from 'azure-devops-extension-api';
-import { RestClientBase } from 'azure-devops-extension-api/Common/RestClientBase';
-import { WorkItemTagDefinition } from 'azure-devops-extension-api/WorkItemTracking';
+import { IVssRestClientOptions } from '../../Common/Context';
+import { RestClientBase } from '../../Common/RestClientBase';
+import { WorkItemTagDefinition } from '../../WorkItemTracking
 
 export class ExtendedWorkItemTrackingRestClient extends RestClientBase {
   constructor(options: IVssRestClientOptions) {

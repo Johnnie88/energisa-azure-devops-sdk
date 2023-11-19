@@ -1,6 +1,7 @@
 import { Button, IButtonProps } from 'azure-devops-ui/Button';
 import { ButtonGroup } from 'azure-devops-ui/ButtonGroup';
 import { Icon, IIconProps } from 'azure-devops-ui/Icon';
+import React = require('react');
 
 export interface ExtendedZeroDataProps {
   title: string;

@@ -3,6 +3,7 @@ import { ButtonGroup } from 'azure-devops-ui/ButtonGroup';
 import * as cx from 'classnames';
 
 import { VersionDisplay, VersionDisplayProps } from '../Component/VersionDisplay';
+import React = require('react');
 
 export interface PanelWrapperProps extends VersionDisplayProps {
   children: React.ReactNode;

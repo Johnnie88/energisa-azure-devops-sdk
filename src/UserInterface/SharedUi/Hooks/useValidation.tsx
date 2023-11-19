@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import * as yup from 'yup';
 
-import { parseValidationError, ValidationErrors } from '../../core/ValidationUtils';
+import { parseValidationError, ValidationErrors } from '../../../Core/BusinessExtensions/ValidationUtils';
 
 export type ValidationFunc<T> = (schema: yup.ObjectSchema<any>, data: T) => Promise<boolean>;
 

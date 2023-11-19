@@ -1,4 +1,4 @@
-import { IVssIdentityService } from 'azure-devops-extension-api/Identities';
+import { IVssIdentityService } from '../Identities';
 import * as DevOps from 'azure-devops-extension-sdk';
 import { IIdentity } from 'azure-devops-ui/IdentityPicker';
 
