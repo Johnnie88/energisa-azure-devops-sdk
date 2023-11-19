@@ -1,3 +1,5 @@
+import React = require("react");
+
 export interface WorkItemStateDisplayProps {
     color: string;
     text: string;
