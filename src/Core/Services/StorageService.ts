@@ -1,4 +1,4 @@
-import { IExtensionDataService } from 'azure-devops-extension-api';
+import { IExtensionDataService } from '../../Common';
 import * as DevOps from 'azure-devops-extension-sdk';
 
 import { ScopeType } from '../../Common/CommonTypes';

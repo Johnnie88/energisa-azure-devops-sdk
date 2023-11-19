@@ -1,5 +1,6 @@
-import { getClient } from 'azure-devops-extension-api/Common';
-import { CoreRestClient, ProjectProperty } from 'azure-devops-extension-api/Core';
+// import { getClient } from 'azure-devops-extension-api/Common';
+import { getClient } from '../../Common';
+import { CoreRestClient, ProjectProperty } from '../../Core';
 import {
   WorkItem,
   WorkItemErrorPolicy,
@@ -8,11 +9,11 @@ import {
   WorkItemTagDefinition,
   WorkItemTrackingRestClient,
   WorkItemType,
-} from 'azure-devops-extension-api/WorkItemTracking';
-import { WorkItemTrackingProcessRestClient } from 'azure-devops-extension-api/WorkItemTrackingProcess';
+} from '../../WorkItemTracking'
+import { WorkItemTrackingProcessRestClient } from '../../WorkItemTrackingProcess';
 
 import { getChildIds, getParentId } from '../BusinessExtensions/WorkItemUtils';
-import { ExtendedWorkItemTrackingRestClient } from '../WorkItemTracking/ExtendedWorkItemTrackingRestClient';
+import { ExtendedWorkItemTrackingRestClient } from '../../WorkItemTracking/Extension/ExtendedWorkItemTrackingRestClient';
 import { DevOpsService, IDevOpsService } from './DevOpsService';
 
 export interface IWorkItemService {
@@ -179,15 +180,7 @@ export class WorkItemService implements IWorkItemService {
       return wit;
     }
   }
-
-  public getWorkItemBoardColumn(workItem: WorkItem): string | undefined {
-    return getWorkItemBoardColumn(workItem);
-  }
-
-  public getWorkItemAreaPath(workItem: WorkItem): string | undefined {
-    return getWorkItemAreaPath(workItem);
-  }
-
+  
   public async setWorkItemBoardColumn(workItem: WorkItem, column: string): Promise<WorkItem> {
     const client = getClient(WorkItemTrackingRestClient);
     const updated = await client.updateWorkItem(

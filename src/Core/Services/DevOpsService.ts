@@ -6,8 +6,9 @@ import {
   IPanelOptions,
   IProjectInfo,
   IProjectPageService
-} from 'azure-devops-extension-api';
-import { IWorkItemFormService } from 'azure-devops-extension-api/WorkItemTracking';
+} from '../../Common';
+// import { IWorkItemFormService } from 'azure-devops-extension-api/WorkItemTracking';
+import { IWorkItemFormService } from '../../WorkItemTracking';
 import * as DevOps from 'azure-devops-extension-sdk';
 
 export interface IDevOpsService {
