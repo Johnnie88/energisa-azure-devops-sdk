@@ -8,7 +8,7 @@ import {
   WorkItemTagDefinition,
   WorkItemTrackingRestClient,
   WorkItemType,
-} from '../../WorkItemTracking'
+} from '../../WorkItemTracking';
 import { WorkItemTrackingProcessRestClient } from '../../WorkItemTrackingProcess';
 
 import { getChildIds, getParentId } from '../BusinessExtensions/WorkItemUtils';
@@ -44,7 +44,7 @@ export class WorkItemService implements IWorkItemService {
   private _devOpsService: IDevOpsService;
   private _processTemplateTypeKey = 'System.ProcessTemplateType';
   constructor(devOpsService?: IDevOpsService) {
-    this._devOpsService = devOpsService || new DevOpsService();
+    this._devOpsService = devOpsService ?? new DevOpsService();
   }
 
   public async getParentForWorkItem(
@@ -179,7 +179,7 @@ export class WorkItemService implements IWorkItemService {
       return wit;
     }
   }
-  
+
   public async setWorkItemBoardColumn(workItem: WorkItem, column: string): Promise<WorkItem> {
     const client = getClient(WorkItemTrackingRestClient);
     const updated = await client.updateWorkItem(
