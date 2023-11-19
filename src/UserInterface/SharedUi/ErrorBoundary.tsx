@@ -2,6 +2,7 @@ import { IIconProps } from 'azure-devops-ui/Icon';
 import { ZeroData } from 'azure-devops-ui/ZeroData';
 import * as css from 'classnames';
 import { Component, ErrorInfo, ReactNode } from 'react';
+import React = require('react');
 interface Props {
   children: ReactNode;
   className?: string;
