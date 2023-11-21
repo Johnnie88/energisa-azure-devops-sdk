@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "node buildpackage.js",
-    "pack": "cd /bin && npm pack"
+    "pack": "cd ./bin && npm pack"
   },
   "keywords": [
     "extensions",
