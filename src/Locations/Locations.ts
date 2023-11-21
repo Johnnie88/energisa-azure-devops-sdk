@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 import * as Identities from "../Identities/Identities";
 import * as WebApi from "../WebApi/WebApi";
 

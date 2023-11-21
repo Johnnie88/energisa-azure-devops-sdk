@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 import { IVssRestClientOptions } from "../Common/Context";
 import { RestClientBase } from "../Common/RestClientBase";
 

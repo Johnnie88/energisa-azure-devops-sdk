@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 /**
  * Container class for changed identities
  */

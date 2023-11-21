@@ -1,8 +1,3 @@
-/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
 
 // Fetch polyfill for IE11
 import "whatwg-fetch";

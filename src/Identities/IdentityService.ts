@@ -6,10 +6,7 @@ export const enum IdentityServiceIds {
      * Provides a way to search for identities.
      */
     IdentityService = "ms.vss-features.identity-service"
-}
-
-
-export interface IIdentity {
+}export interface IIdentity {
     entityId: string;
     entityType: string;
     originDirectory: string;
@@ -32,10 +29,7 @@ export interface IdentitiesSearchRequestModel {
     filterByAncestorEntityIds?: string[];
     filterByEntityIds?: string[];
     options?: any;
-}
-
-
-export interface IVssIdentityService {
+}export interface IVssIdentityService {
     /**
      * Get a list of the Most Recently Used (MRU) identities
      *

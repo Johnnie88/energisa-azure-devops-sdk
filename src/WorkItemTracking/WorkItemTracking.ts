@@ -1,9 +1,5 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
+import { BoardColumn } from "../Boards";
 import * as WebApi from "../WebApi/WebApi";
 
 export interface AccountMyWorkResult {
@@ -2197,3 +2193,12 @@ export interface WorkItemUpdate extends WorkItemTrackingResource {
 export interface WorkItemUpdate2 extends WorkItemUpdate {
     id: number;
 }
+
+/**
+ * get's all board columns of the current board
+ */
+export interface BoardColumns {
+    columns: BoardColumn[];
+}
+
+        

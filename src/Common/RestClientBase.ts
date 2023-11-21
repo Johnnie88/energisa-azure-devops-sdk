@@ -1,8 +1,3 @@
-/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
 
 import { IVssRestClientOptions } from "./Context";
 import { issueRequest, IVssRequestOptions } from "./Fetch";

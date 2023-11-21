@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 import * as DistributedTaskCommon from "../DistributedTaskCommon/DistributedTaskCommon";
 import * as FormInput from "../FormInput/FormInput";
 import * as WebApi from "../WebApi/WebApi";

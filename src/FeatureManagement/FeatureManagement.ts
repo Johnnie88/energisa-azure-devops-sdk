@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 /**
  * A feature that can be enabled or disabled
  */

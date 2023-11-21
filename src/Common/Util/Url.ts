@@ -1,8 +1,3 @@
-/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
 
 /**
  * Key constants used by route parsing.

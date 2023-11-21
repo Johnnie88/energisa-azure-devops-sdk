@@ -1,8 +1,3 @@
-/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
 
 /**
  * Interface for a class that can retrieve authorization tokens to be used in fetch requests.

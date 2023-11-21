@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 import * as System from "../Common/System";
 import * as SystemData from "../Common/SystemData";
 import * as TfsCore from "../Core/Core";

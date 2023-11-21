@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 import * as System from "../Common/System";
 import * as WebApi from "../WebApi/WebApi";
 import * as WorkItemTracking from "../WorkItemTracking/WorkItemTracking";

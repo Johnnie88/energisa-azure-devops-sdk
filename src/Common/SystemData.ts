@@ -1,9 +1,4 @@
-﻿/*
- * ---------------------------------------------------------
- * Copyright(C) Microsoft Corporation. All rights reserved.
- * ---------------------------------------------------------
- */
-
+﻿
 /**
  * Specifies SQL Server-specific data type of a field, property, for use in a System.Data.SqlClient.SqlParameter.
  */
